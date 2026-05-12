@@ -1,166 +1,87 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #e2e2e2;
-    text-align: center;
- 
-    align-items: center;
- 
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
 }
 
-body  {
-  
-  background-image: url("img1.jpg"); /* Փոխիր "your-image.jpg" քո նկարի ուղով */
-  background-repeat: no-repeat;            /* Մի կրկնիր նկարը */
-  background-position:  center;      /* Կենտրոնում է նկարը */
-   background-size: 100% ;  
-margin: 0; 
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #d6c59c;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo {
-  width: 90px;
-  margin-right: 20px;
-  
-}
-.top-header {
-display: flex;
-  gap: 5px;
-  align-items: center;
-  padding: 50px;
-  background-color: #d6c59cdd; /* Գույն, կարող ես փոխել */
-  padding: 15px;         /* Վերին/ներքևի տարածք */
-  text-align: center;          /* Տեքստը կենտրոնում */
-  color: rgb(4, 3, 3);               /* Սպիտակ տեքստ */
-  font-size: 10px;            /* Տեքստի չափը */
-  font-weight: bold;          /* Bold տեքստ */
-  border-radius: 0 0 0px 0px; /* Կափարիչ անկյուններ */
-  box-shadow: 0 4px 8px rgba(150, 100, 100, 0.2); /* Թութփափուկ ստվեր */
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
- .container {
+.nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+/* HERO */
+.hero-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* CALCULATOR */
+.calculator {
   max-width: 500px;
-  margin: 20px auto;
-  padding: 28px;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border-radius: 18px;
-  box-shadow: 0 8px 24px  #d6c59cdd;
-  font-family: "Inter", "Segoe UI", sans-serif;
-}
-
-.container * {
-  color: #333;
+  margin: 30px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
 .input-group {
-    margin-bottom: 5px;
-    width: 200px; 
-    padding: 5px;
-    margin-top: 10px;
-    margin-left: 150px;
-}
-
-
-label {
-    display: block;
-    margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #000000;
-    border-radius: 15px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
 button {
-    width: 50%;
-    padding: 10px;
-    background: rgba(203, 170, 99, 0.96);
-    color: rgb(255, 132, 132);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-}
-button {
-  background: none;      /* հանում է background-ը */
-  border: none;          /* հանում է border-ը */
-  color: #000;           /* սև գույն */
-  font-size: 14px;       /* կարող ես փոխել */
-  font-weight: 600;
-  cursor: pointer;       /* ձեռքի icon hover-ին */
-}
-
-#result {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.site-header {
-  padding: 10px 10px;
-  color: #f0e7e7;
-  
-}
-
-.site-header address {
-  font-style: normal;
-  
-  flex-direction: column;
-  gap: 1px;
-}
-
-.site-header a {
-  color: #eae6e6;
-  text-decoration: none;
-  font-weight: 200;
-  
-}
-
-.about a {
-  color: #000;           /* սև տեքստ */
-  text-decoration: none; /* հանում underline */
-  font-size: 16px;
-  font-weight: 600;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #c9a86a;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
   cursor: pointer;
-  padding: 5px 10px;
-  transition: color 0.3s, text-decoration 0.3s;
-  position:fixed;
-  top: 30px;
-  right: 30px;
-  z-index: 1000;
-  align-items: center;
 }
 
-
-
-.about {
-  padding: 4px, 20px;
-  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  background: #111;
+  color: white;
 }
 
-.about-container {
-  max-width: 500px;
-  margin: 20px auto;
-  padding: 50px;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border-radius: 18px;
-  box-shadow: 0 8px 24px  #d6c59cdd;
-  font-family: "Inter", "Segoe UI", sans-serif;
- 
-
+.footer a {
+  color: #fff;
+  text-decoration: none;
 }
-
-.about h2 {
-  font-size: 42px;
-  margin-bottom: 20px;
-  color: #000000;
-}
-
-.about p {
-  font-size: 18px;
-  line-height: 1.8;
-  color: #000000;
-}
-
