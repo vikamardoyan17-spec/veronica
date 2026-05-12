@@ -9,7 +9,7 @@ body {
 
 body  {
   
-  background-image: url("img/img1.jpg"); /* Փոխիր "your-image.jpg" քո նկարի ուղով */
+  background-image: url("img1.jpg"); /* Փոխիր "your-image.jpg" քո նկարի ուղով */
   background-repeat: no-repeat;            /* Մի կրկնիր նկարը */
   background-position:  center;      /* Կենտրոնում է նկարը */
    background-size: 100% ;  
