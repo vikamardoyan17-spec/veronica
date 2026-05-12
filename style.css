@@ -61,17 +61,6 @@ input {
   border: 1px solid #ccc;
 }
 
-button {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  background: #c9a86a;
-  color: white;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
 /* FOOTER */
 .footer {
   text-align: center;
