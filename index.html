@@ -1,68 +1,65 @@
 <!DOCTYPE html>
 <html lang="hy">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arushanyan Build</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arushanyan Build</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
- 
 
 <body>
- 
-  <!-- Վերին տեղեկատվական հատվածը -->
- 
-<header class="top-header">
-<img src="img/IMG_2.jpg" class="logo" alt="Logo">
-    <img src="img/img1.jpg" class="hero-image">
-  <h1>Arushanyan Build Renovation</h1>
-  
 
-
- 
-   <div class="about">
-  <a href="about.html">About Us</a>
-</div>
- 
-</header>
-</body>
- 
-    <div class="container">
-        <h1>Քմ Հաշվիչ</h1>
- 
-        <div class="input-group">
-            <label for="width">Լայնություն (մ)</label>
-            <input type="number" id="width" placeholder="Մուտքագրեք լայնությունը">
-        </div>
- 
-        <div class="input-group">
-            <label for="height">Բարձրություն (մ)</label>
-            <input type="number" id="height" placeholder="Մուտքագրեք բարձրությունը">
-        </div>
- 
-        <div class="input-group">
-            <label for="depth">Խորություն (մ)</label>
-            <input type="number" id="depth" placeholder="Խորության արժեք (optional)">
-        </div>
- 
-        <button onclick="calculateArea()">Հաշվել</button>
- 
-        <div id="result"></div>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo-box">
+      <img src="img/IMG_2.jpg" alt="Logo" class="logo">
+      <h1>Arushanyan Build Renovation</h1>
     </div>
-    
-    <header class="site-header">
- 
-        <br><br><br><br><br><br>
-       <address>
-           Հեռ․ <a href="tel:+37455255255">+374 55 255255</a> |
-           <a href="https://www.instagram.com/arushanyanbuild" target="_blank">
-  <i class="fab fa-instagram"></i> @arushanyanbuild
-</a>
- 
-         
-       </address>
-    </header>
- 
-    <script src="script.js"></script>
+
+    <nav class="nav">
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="img/img1.jpg" alt="Construction" class="hero-img">
+  </section>
+
+  <!-- CALCULATOR -->
+  <section class="calculator">
+    <h2>Քմ Հաշվիչ</h2>
+
+    <div class="input-group">
+      <label>Լայնություն (մ)</label>
+      <input type="number" id="width" placeholder="Լայնություն">
+    </div>
+
+    <div class="input-group">
+      <label>Բարձրություն (մ)</label>
+      <input type="number" id="height" placeholder="Բարձրություն">
+    </div>
+
+    <div class="input-group">
+      <label>Խորություն (մ)</label>
+      <input type="number" id="depth" placeholder="Optional">
+    </div>
+
+    <button onclick="calculateArea()">Հաշվել</button>
+
+    <div id="result"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Հեռ․ <a href="tel:+37455255255">+374 55 255255</a></p>
+    <p>
+      <a href="https://www.instagram.com/arushanyanbuild" target="_blank">
+        @arushanyanbuild
+      </a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
