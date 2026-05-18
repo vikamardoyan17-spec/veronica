@@ -1,33 +1,39 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="hy">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arushanyan Build</title>
-  <link rel="stylesheet" href="style.css"/>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <!-- HEADER -->
   <header class="header">
+
     <div class="logo-box">
-      <img src="img/IMG_2.jpg" alt="Logo" class="logo">
+      <img src="img/logo.jpg" alt="Logo" class="logo">
       <h1>Arushanyan Build Renovation</h1>
     </div>
 
     <nav class="nav">
       <a href="about.html">About Us</a>
     </nav>
+
   </header>
 
   <!-- HERO -->
   <section class="hero">
-    <img src="img/img1.jpg" alt="Construction" class="hero-img">
+    <img src="img/hero.jpg" alt="Construction" class="hero-img">
   </section>
 
-  <!-- CALCULATOR (WITHOUT SCRIPT) -->
+  <!-- CALCULATOR -->
   <section class="calculator">
+
     <h2>Քմ Հաշվիչ</h2>
 
     <div class="input-group">
@@ -45,18 +51,44 @@
       <input type="number" id="depth">
     </div>
 
+    <button onclick="calculate()">Հաշվել</button>
+
     <div id="result"></div>
+
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>Հեռ․ <a href="tel:+37455255255">+374 55 255255</a></p>
+
     <p>
-      <a href="https://www.instagram.com/arushanyanbuild">
+      Հեռ․
+      <a href="tel:+37455255255">
+        +374 55 255255
+      </a>
+    </p>
+
+    <p>
+      <a href="https://www.instagram.com/arushanyanbuild/" target="_blank">
         @arushanyanbuild
       </a>
     </p>
+
   </footer>
+
+  <script>
+    function calculate() {
+
+      const width = parseFloat(document.getElementById("width").value) || 0;
+      const height = parseFloat(document.getElementById("height").value) || 0;
+      const depth = parseFloat(document.getElementById("depth").value) || 0;
+
+      const total = width * height * depth;
+
+      document.getElementById("result").innerHTML =
+        "Ընդհանուր քմ․ " + total.toFixed(2);
+
+    }
+  </script>
 
 </body>
 </html>
